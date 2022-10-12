@@ -6,8 +6,9 @@
   "type": "module",
   "scripts": {
     "build": "tsc",
-    "start": "ts && npx prisma migrate dev && node ./dist/index.js",
-    "dev": "nodemon index.ts"
+    "dev:migrate": "npx prisma migrate dev && node src/index.js",
+    "dev": "nodemon src/index.js",
+    "start": "node src/index.js"
   },
   "keywords": [],
   "author": "",
